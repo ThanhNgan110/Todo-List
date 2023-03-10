@@ -55,6 +55,36 @@ body{
     justify-content: center;
 }
 
+.block-container-app .block-container-app__wrapper .block-container__appwrapper__task-input .taskAdd{
+    background-color: #0d1ece;
+    border: none;
+    /* letter-spacing: 2px; */
+    padding: 12px 12px;
+    border-radius: 5px;
+    margin-right: -19px;
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+
+}
+
+
+
+
+.block-container-app .block-container-app__wrapper .block-container__appwrapper__task-input .taskAdd .active{
+    background-color: #aeb2de;
+    border: none;
+    /* letter-spacing: 2px; */
+    padding: 12px 12px;
+    border-radius: 5px;
+    margin-right: -19px;
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+    opacity: 7;
+
+}
+
 
 .block-container-app .block-container-app__wrapper .block-container__appwrapper__task-input{
     margin-top: 10px;

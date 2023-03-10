@@ -20,7 +20,11 @@
         </div>
         <div class="block-container-app__wrapper">
             <div class="block-container__appwrapper__task-input">
-                <input type="text" placeholder="Add a new task">
+                <form action="" method="post" id="form1">
+                    <input id="inputTask" type="text" placeholder="Add a new task">
+                    <button class="taskAdd" type="submit" id="taskAdd">Add</button>
+                </form>
+
             </div>
 
             <div class="block-container__appwrapper__task-list">
@@ -47,8 +51,6 @@
                         </div>
 
                     </li>
-
-
                     <li class="task">
                         <label for="1">
                             <input type="checkbox" id="">
