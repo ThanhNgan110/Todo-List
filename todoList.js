@@ -17,11 +17,10 @@ form.addEventListener('submit', e => {
         console.log('Not empty');
         // addBtn.classList.add('active');
         addBtn.style.background = '#aeb2de';
+        addBtn.style.background = '#0d1ece';
+        taskInput.value ='';      
         addTodo(taskInputValue);
         showTodo(todoList);
-
-
-
     }
 });
 
@@ -36,13 +35,14 @@ const addTodo = (taskInputValue => {
 });
 
 const showTodo = (todoList => {
-    array.forEach(todoList => {
-        console.log(todoList);
-    });
-
-
+    for (let i = 0; i < todoList.length; i++) {
+        console.log(todoList[i]);
+    }
 
 });
+
+
+
 
 
 
