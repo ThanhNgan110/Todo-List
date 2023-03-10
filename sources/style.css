@@ -102,6 +102,10 @@ cursor: pointer;
     border: none;
 }
 
+.block-container-app .block-container__appwrapper__task-list .task-box .task .setting .btn-delete{
+    margin: 0 10px;
+}
+
 
 
 
