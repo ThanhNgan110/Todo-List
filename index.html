@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/sources/style.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-   
+
 </head>
+
 <body>
     <div class="block-container-app">
         <h2 class="block-container-app__title">todos</h2>
         <div class="block-container-app__empty-status">
-           <img src="/sources/svg/checklist.svg" alt="check-list" style=" width: 64px; height: 64x;">
-           <h3>Add your first todo</h3>
-           <p>What do you want to do today?</p>
+            <img src="/sources/svg/checklist.svg" alt="check-list" style=" width: 64px; height: 64x;">
+            <h3>Add your first todo</h3>
+            <p>What do you want to do today?</p>
         </div>
         <div class="block-container-app__wrapper">
             <div class="block-container__appwrapper__task-input">
@@ -30,8 +31,19 @@
                             <p>Validate form use HTML, CSS, Javascript</p>
                         </label>
                         <div class="setting">
-                            <i class="fal fa-edit"></i>
-                            <i class="fa-light fa-trash"></i>
+                            <button type="button" class="btn-edit">
+                                <img src="/sources/svg/edit-button-svgrepo-com.svg" alt="edit-icon"
+                                    style=" width: 30px; height: auto;">
+
+                            </button>
+                            <button type="button" class="btn-delete">
+                                <img src="/sources/svg/delete-svgrepo-com.svg" alt="delete-icon"
+                                    style=" width: 30px; height: auto;">
+
+                            </button>
+                            <!-- <img src="/sources/svg/edit-button-svgrepo-com.svg" alt="edit-icon"
+                                style=" width: 30px; height: auto;">
+                            <img src="/sources/svg/delete-svgrepo-com.svg" alt="delete-icon" style=" width: 30px; height: auto;"> -->
                         </div>
 
                     </li>
@@ -48,23 +60,26 @@
                         </div>
 
                     </li>
+
+                    <li class="task">
+                        <label for="1">
+                            <input type="checkbox" id="">
+                            <p>Create app todo list </p>
+                        </label>
+                        <div class="setting">
+                            <i class="fal fa-edit"></i>
+                            <i class="fa-light fa-trash"></i>
+                        </div>
+
+                    </li>
+
                 </ul>
-
-
-
             </div>
-           
-            
 
-            
         </div>
-
-        
-       
-
-
     </div>
     <script src="/todoList.js"></script>
-    
+
 </body>
+
 </html>

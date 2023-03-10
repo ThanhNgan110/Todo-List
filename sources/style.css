@@ -94,6 +94,14 @@ cursor: pointer;
     margin-left: 27px;
 }
 
+.block-container-app .block-container__appwrapper__task-list .task-box .task .setting{
+    padding: 0 15px;
+}
+
+.block-container-app .block-container__appwrapper__task-list .task-box .task .setting button{
+    border: none;
+}
+
 
 
 
