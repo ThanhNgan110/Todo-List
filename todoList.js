@@ -1,7 +1,8 @@
 const form = document.getElementById('form1');
 const taskInput = document.getElementById('inputTask');
 const addBtn = document.querySelector('.block-container-app .block-container-app__wrapper .block-container__appwrapper__task-input .taskAdd');
-const todoList = [];  // create an array in order to hold of list todo
+let  todoList = [];  // create an array in order to hold of list todo
+let currentTaskInput = null;
 
 
 form.addEventListener('submit', e => {
@@ -21,7 +22,7 @@ form.addEventListener('submit', e => {
         addBtn.style.background = '#0d1ece';
         taskInput.value = '';
         addTodo(taskInputValue);
-        showTodo(todoList);
+        
     }
 });
 
@@ -30,27 +31,28 @@ const addTodo = (taskInputValue => {
     const taskInput = {
         id: Date.now,
         name: taskInputValue,
-        checked: false,
-    }
-    todoList.push(taskInputValue);
+    };
     console.log(todoList);
+    currentTaskInput = taskInput;
+    todoList.push(currentTaskInput);
+    console.log(currentTaskInput);
+    showTodo();
+
+  
+
+    
 });
 
-const showTodo = (todoList) => {
-    for (let i = 0; i < todoList.length; i++) {
-        console.log(todoList[i]);
-        
-    }
-    // const listTask = document.querySelector('.task-box');
+const showTodo = () => {
+   
     const listTask = document.querySelector('.block-container__appwrapper__task-list .task-box');
     console.log(listTask);
-
     let node = document.createElement('li');
     node.classList.add('task');
     node.innerHTML = `
                             <label for="1">
-                            <input type="checkbox" id="${todoList.id}">
-                            <p>${todoList.taskInputValue}</p>
+                            <input type="checkbox" id="${currentTaskInput.id}">
+                            <p>${currentTaskInput.name}</p>
                         </label>
                         <div class="setting">
                             <button type="button" class="btn-edit">
@@ -67,6 +69,9 @@ const showTodo = (todoList) => {
     listTask.appendChild(node);
     console.log(node);
 };
+
+
+
 
 
 
